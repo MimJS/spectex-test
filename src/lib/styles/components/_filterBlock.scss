@@ -1,4 +1,5 @@
 .filterBlock {
+    width: 100%;
     .filterBlock--header {
         padding: 10px;
         display: flex;
@@ -27,8 +28,14 @@
             }
         }
         .filterBlock--inputs {
-            padding: 10px 20px 30px;
-            height: 68px;
+            padding: 10px 20px;
+            height: var(--filterBlock--inputs_height);
+            @media screen and (max-width: 845px) and (min-width: 478px) {
+                height: var(--filterBlock_height_mobile);
+            }
+            @media screen and (max-width: 477px) {
+                height: var(--filterBlock--inputs_height_mobile-small);
+            }
         }
     }
     .filterBlock--inputs {
@@ -39,17 +46,13 @@
         .filterBlock--inputs-row {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            flex-wrap: wrap;
             .Input {
-                &:not(:first-child) {
-                    margin-left: 30px;
-                }
+                margin-right: 10px;
                 .Input--in {
-                    width: 150px;
+                    max-width: 150px;
                 }
-            }
-            &:not(:first-child) {
-                margin-top: 20px;
+                margin-bottom: 20px;
             }
         }
     }
