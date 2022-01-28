@@ -1,1 +1,13 @@
-@import "./scheme", "./util", "./components/index";
+@import "./scheme", "./util", "./components/index", "./pages/index";
+
+// ? html settings
+body {
+    margin: 0px;
+    background: var(--content_background);
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}

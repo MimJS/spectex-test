@@ -1,0 +1,29 @@
+.Menu {
+    padding: 10px 0;
+    width: 68px;
+    background: var(--menu_background);
+    height: calc(100% - 20px);
+    transition: all 0.45s ease-in-out;
+    overflow: hidden;
+    .Cell {
+        width: calc(100% - 20px) !important;
+    }
+    &:hover {
+        & {
+            width: 220px;
+        }
+    }
+    .Menu--logo {
+        .Cell {
+            .Cell--content {
+                margin-left: 10px !important;
+            }
+        }
+    }
+    .Menu--items {
+        margin-top: 30px;
+        .Cell {
+            padding: 10px !important;
+        }
+    }
+}

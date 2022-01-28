@@ -1,0 +1,21 @@
+.Header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background: var(--header_background);
+    .Header--left {
+        .Input {
+            .Input--in {
+                width: 150px;
+            }
+        }
+    }
+    .Header--right {
+        .Cell {
+            .Cell--content {
+                font-size: 18px;
+            }
+        }
+    }
+}

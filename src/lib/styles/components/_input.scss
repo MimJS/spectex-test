@@ -1,0 +1,17 @@
+.Input {
+    border-bottom: solid 1px black !important;
+    width: fit-content;
+    padding: 0 10px;
+    padding-bottom: 2px !important;
+    .Input--in {
+        outline: none;
+        border: none;
+        background: transparent;
+        font-size: 16px;
+        &::placeholder {
+            color: rgba(0,0,0,1);
+            opacity: 1;
+            font-size: 16px;
+        }
+    }
+}

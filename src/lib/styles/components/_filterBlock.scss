@@ -1,0 +1,56 @@
+.filterBlock {
+    .filterBlock--header {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title {
+            font-size: 18px;
+        }
+        .switchButton {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            transition: all 0.1s linear;
+            &:active {
+                opacity: 0.7;
+                transform: rotate(360deg);
+            }
+        }
+    }
+    &.filterBlock--active {
+        .filterBlock--header {
+            .switchButton {
+                &:active {
+                    transform: rotate(-360deg);
+                }
+            }
+        }
+        .filterBlock--inputs {
+            padding: 10px 20px 30px;
+            height: 68px;
+        }
+    }
+    .filterBlock--inputs {
+        height: 0px;
+        overflow: hidden;
+        padding: 0px 20px;
+        transition: all 0.45s ease-in-out;
+        .filterBlock--inputs-row {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .Input {
+                &:not(:first-child) {
+                    margin-left: 30px;
+                }
+                .Input--in {
+                    width: 150px;
+                }
+            }
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.page--n-main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    .page--left {
+        border-right: 2px solid var(--border_color);
+    }
+    .page--content {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 70px);
+        .page--content-header {
+            border-bottom: 2px solid var(--border_color);
+        }
+        .page--content-in {
+            overflow: hidden;
+            height: calc(100% - 120px);
+            position: relative;
+            .mainContent {
+                position: relative;
+                height: 100%;
+                width: 100%;
+                overflow: auto;
+
+                .testText {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
