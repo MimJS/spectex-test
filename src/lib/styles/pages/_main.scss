@@ -9,7 +9,7 @@
     .page--content {
         display: flex;
         flex-direction: column;
-        width: calc(100% - 70px);
+        flex-grow: 1;
         .page--content-header {
             border-bottom: 2px solid var(--border_color);
         }
@@ -18,7 +18,7 @@
             height: calc(100% - 120px);
             position: relative;
             .mainContent {
-                position: relative;
+                position: absolute;
                 height: 100%;
                 width: 100%;
                 overflow: auto;
